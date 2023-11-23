@@ -92,6 +92,7 @@ header .text-header {
 .navbar {
     /* border: red dotted 3px; */
     display: none;
+    padding-bottom: 10px;
 }
 
 div.burger-menu {
@@ -130,8 +131,13 @@ h3,
     color: #666;
 }
 
+.description:hover {
+    opacity: 1;
+}
+
 .description {
     display: none;
+    opacity: 0;
 }
 
 section.banner img {
@@ -195,10 +201,15 @@ main section h3 {
     position: absolute;
     right: 20px;
     top: -15px;
+
 }
 
 .product-desc-box {
     position: relative;
+}
+
+.product-delivery-icon {
+    border: rebeccapurple 2px dotted;
 }
 
 footer .icon{
@@ -221,18 +232,24 @@ footer .paragraph-footer{
     font-size: 12px;
     color: #8a939d;
     text-align: center;
+    padding-bottom: 20px;
 }
 
-footer .copyrigth{
+footer .copyrigth {
     text-align: left;
-    color:  #666;
-    padding-top: 30px;
+    color: #666;
+    padding-top: 5px;
+    background-color: #EAC926;
 }
 
 /* FORMULARIO */
 
 .create-form {
+    width: 80%;
+    align-items: center;
+    border-radius: 20px;
     padding: 20px 15px;
+    background-color: #8a939d;
 }
 
 .control-form{
@@ -256,6 +273,7 @@ footer .copyrigth{
     font-size: 20px;
     color: #ebebeb ;
 }
+
 
  /* Media queries para mobile */
 @media (min-width: 361px) {
@@ -358,9 +376,12 @@ section article{
     }
 
     section article{
-
         display: flex;
         width: 23%;
+    }
+
+    .w-30p{
+        width: 40%;
     }
     
     .products{
@@ -369,5 +390,10 @@ section article{
         justify-content: space-around;
     }
     
-
+    .container-footer{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding-bottom: 10px
+    }
 }
