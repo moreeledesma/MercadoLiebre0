@@ -131,13 +131,27 @@ h3,
     color: #666;
 }
 
-.description:hover {
-    opacity: 1;
-}
-
 .description {
     display: none;
     opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+article:hover{
+    box-shadow: 0px 0px 10px rgba(0,0, 0, 0.5) ;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.main-article i{
+    transition: transform 0.3s ease-in-out;
+}
+
+article:hover .main-article i{
+    transform: rotate(-90deg);
+}
+
+article:hover .description {
+    opacity: 1;
 }
 
 section.banner img {
@@ -242,6 +256,11 @@ footer .copyrigth {
     background-color: #EAC926;
 }
 
+footer  i:hover {
+        transition: background-color 0.3s ease-in-out ;
+        color: rgb(9, 9, 77);
+}
+
 /* FORMULARIO */
 .header{
     margin-bottom: 50px;
@@ -282,10 +301,11 @@ footer .copyrigth {
 }
 
 .button-form{
-    background-color: #1259c3;
+    background-color: #2474ec;
     padding: 3px;
     border-radius: 5px;
     margin-right: 30px;
+    border:none;
 }
 
 .main-form {
@@ -297,6 +317,11 @@ footer .copyrigth {
 form a , button{
     color: #ffffff;
     text-decoration: none;
+}
+
+button:hover {
+    transition: background-color 0.3s ease-in-out ;
+    background-color: #0022AA;
 }
 
 
